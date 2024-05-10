@@ -1,0 +1,63 @@
+# Xcode
+## User settings
+xcuserdata/
+
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Orig files generated after resolving merge conflicts (using git mergetool)
+*.orig
+
+
+## Playgrounds and logs
+Playground/
+*.xcworkspace/
+xcuserdata/
+*.xcuserstate
+
+# Xcode build artifacts
+*.xccheckout
+*.xcscmblueprint
+*.xcscms
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcshareddata/
+*.xcodeproj/xcuserdata/
+!*.xcodeproj/project.pbxproj
+*.xcworkspace/xcuserdata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.pbxuser
+/*.mode1v3
+/*.mode2v3
+/*.perspective
+project.xcworkspace/
+
+# Swift Package Manager
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# .build/
+#
+# Add this line if you want to avoid checking in Xcode schemes.
+# .swiftpm/xcode
+
+# CocoaPods
+# We recommend against adding the Pods directory to your .gitignore.
+# However, you should judge for yourself. Pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+Pods/
+# CocoaPods artifact cache
+# This is a cache of the download packages. Often there is no need to version control it.
+# However, you may want to reference this file from your .gitignore if you want to prevent it being accidentally committed.
+# CocoaPods creates it at the root of your Xcode project unless you specify a different location.
+# Documentation: https://guides.cocoapods.org/using/using-cocoapods.html#native-dependencies
+Podfile.lock
+
+# Carthage
+# Add this line if you want to avoid checking in binary build files.
+# Carthage/Build/
+
+# SwiftLint
+# Add this line if you want to avoid checking in the configuration file for SwiftLint.
+.swiftlint.yml
