@@ -12,9 +12,6 @@
 		1035E20C2BED115E00A9BA8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1035E20B2BED115E00A9BA8D /* ContentView.swift */; };
 		1035E20E2BED116000A9BA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1035E20D2BED116000A9BA8D /* Assets.xcassets */; };
 		1035E2112BED116000A9BA8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1035E2102BED116000A9BA8D /* Preview Assets.xcassets */; };
-		1035E21B2BED116000A9BA8D /* example_codeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1035E21A2BED116000A9BA8D /* example_codeTests.swift */; };
-		1035E2252BED116000A9BA8D /* example_codeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1035E2242BED116000A9BA8D /* example_codeUITests.swift */; };
-		1035E2272BED116000A9BA8D /* example_codeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1035E2262BED116000A9BA8D /* example_codeUITestsLaunchTests.swift */; };
 		1035E2342BED15EE00A9BA8D /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1035E2332BED15EE00A9BA8D /* MapViewModel.swift */; };
 		1035E2372BED1AB600A9BA8D /* A320.glb in Resources */ = {isa = PBXBuildFile; fileRef = 1035E2362BED1AB600A9BA8D /* A320.glb */; };
 		8D1004769B40BBB3D4593477 /* Pods_example_code.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6CBF77A48CB6DF78155F13 /* Pods_example_code.framework */; };
@@ -40,16 +37,13 @@
 
 /* Begin PBXFileReference section */
 		0B6CBF77A48CB6DF78155F13 /* Pods_example_code.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_example_code.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1035E2062BED115E00A9BA8D /* example_code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example_code.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1035E2062BED115E00A9BA8D /* example_code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = example_code.app; path = "/Users/mahmad/Work/iOS/example_code/build/Debug-iphoneos/example_code.app"; sourceTree = "<absolute>"; };
 		1035E2092BED115E00A9BA8D /* example_codeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example_codeApp.swift; sourceTree = "<group>"; };
 		1035E20B2BED115E00A9BA8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1035E20D2BED116000A9BA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1035E2102BED116000A9BA8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1035E2162BED116000A9BA8D /* example_codeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = example_codeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1035E21A2BED116000A9BA8D /* example_codeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example_codeTests.swift; sourceTree = "<group>"; };
-		1035E2202BED116000A9BA8D /* example_codeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = example_codeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1035E2242BED116000A9BA8D /* example_codeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example_codeUITests.swift; sourceTree = "<group>"; };
-		1035E2262BED116000A9BA8D /* example_codeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example_codeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1035E2162BED116000A9BA8D /* example_codeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = example_codeTests.xctest; path = "/Users/mahmad/Work/iOS/example_code/build/Debug-iphoneos/example_code.app/PlugIns/example_codeTests.xctest"; sourceTree = "<absolute>"; };
+		1035E2202BED116000A9BA8D /* example_codeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = example_codeUITests.xctest; path = "/Users/mahmad/Work/iOS/example_code/build/Debug-iphoneos/example_codeUITests-Runner.app/PlugIns/example_codeUITests.xctest"; sourceTree = "<absolute>"; };
 		1035E2332BED15EE00A9BA8D /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		1035E2352BED1A1200A9BA8D /* example-code-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "example-code-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1035E2362BED1AB600A9BA8D /* A320.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = A320.glb; sourceTree = "<group>"; };
@@ -105,22 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				1035E2082BED115E00A9BA8D /* example_code */,
-				1035E2192BED116000A9BA8D /* example_codeTests */,
-				1035E2232BED116000A9BA8D /* example_codeUITests */,
-				1035E2072BED115E00A9BA8D /* Products */,
 				B40B055EA9C0F74699333B3E /* Pods */,
 				02DE6F31AE86FD38792F1400 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		1035E2072BED115E00A9BA8D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1035E2062BED115E00A9BA8D /* example_code.app */,
-				1035E2162BED116000A9BA8D /* example_codeTests.xctest */,
-				1035E2202BED116000A9BA8D /* example_codeUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1035E2082BED115E00A9BA8D /* example_code */ = {
@@ -143,23 +124,6 @@
 				1035E2102BED116000A9BA8D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		1035E2192BED116000A9BA8D /* example_codeTests */ = {
-			isa = PBXGroup;
-			children = (
-				1035E21A2BED116000A9BA8D /* example_codeTests.swift */,
-			);
-			path = example_codeTests;
-			sourceTree = "<group>";
-		};
-		1035E2232BED116000A9BA8D /* example_codeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1035E2242BED116000A9BA8D /* example_codeUITests.swift */,
-				1035E2262BED116000A9BA8D /* example_codeUITestsLaunchTests.swift */,
-			);
-			path = example_codeUITests;
 			sourceTree = "<group>";
 		};
 		B40B055EA9C0F74699333B3E /* Pods */ = {
@@ -268,7 +232,7 @@
 				Base,
 			);
 			mainGroup = 1035E1FD2BED115E00A9BA8D;
-			productRefGroup = 1035E2072BED115E00A9BA8D /* Products */;
+			productRefGroup = 1035E1FD2BED115E00A9BA8D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -424,7 +388,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1035E21B2BED116000A9BA8D /* example_codeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +395,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1035E2272BED116000A9BA8D /* example_codeUITestsLaunchTests.swift in Sources */,
-				1035E2252BED116000A9BA8D /* example_codeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +603,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E2A28B3D8749D377AADB0F1 /* Pods-example_codeTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -663,7 +623,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4945E42B9131D7A82E7C6197 /* Pods-example_codeTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -684,7 +643,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36F17C5DE5E1CB5B4FFECAB3 /* Pods-example_code-example_codeUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2V5A33G9G3;
@@ -703,7 +661,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEB85BB41A2DC9A66E358DC3 /* Pods-example_code-example_codeUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2V5A33G9G3;

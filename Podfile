@@ -4,7 +4,7 @@
 target 'example_code' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'MapboxMaps', '11.1.0'
+pod 'MapboxMaps', '11.5.1'
   # Pods for example_code
 
   target 'example_codeTests' do

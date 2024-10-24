@@ -27,7 +27,7 @@ class MapViewModel: ObservableObject {
         var demSource = RasterDemSource(id: "mapbox-dem")
         demSource.url = "mapbox://mapbox.mapbox-terrain-dem-v1"
         demSource.tileSize = 514
-        demSource.maxzoom = 18.0
+        demSource.maxzoom = 12.0
         try! mapboxMap.addSource(demSource)
         
         var terrain = Terrain(sourceId: demSource.id)
@@ -51,7 +51,6 @@ class MapViewModel: ObservableObject {
             forResource: "A320",
             withExtension: "glb")!.absoluteString
         var source = GeoJSONSource(id: "source-id")
-        source.maxzoom = 4
         try? mapProxy?.map!.addStyleModel(modelId: "model-id-plane", modelUri: plane)
         var planeFeature = Feature(geometry: Point(CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)))
         planeFeature.properties = ["model-id-key": .string("model-id-plane")]
@@ -60,11 +59,9 @@ class MapViewModel: ObservableObject {
         var layer = ModelLayer(id: "model-layer-id", source: "source-id")
         layer.modelId = .expression(Exp(.get) { "model-id-key" })
         layer.modelType = .constant(.common3d)
-        layer.modelScale = .constant([1, 1, 1])
+        layer.modelScale = .constant([10, 10, 10])
         layer.modelTranslation = .constant([0, 0,  self.altitude])
         layer.modelRotation = .constant([0, 0, 90])
-        layer.maxZoom = 23
-        layer.minZoom = 5
         layer.modelCutoffFadeRange = .constant(0.0)
         try? mapProxy?.map!.addLayer(layer)
 
@@ -94,8 +91,8 @@ class MapViewModel: ObservableObject {
     
     // MARK: - MoveCamera along with Model
     
-    func updateCameraPosition(alt: Double, lat: Double, lng: Double, head: Double, pitch: Double = 0) {
-        addMarkerAnnotation(lat: self.latitude, lon: self.longitude)
+    func updateCameraPosition(alt: Double, lat: Double, lng: Double, head: Double, pitch: Double = 60) {
+//        addMarkerAnnotation(lat: self.latitude, lon: self.longitude)
         let freeCam = self.mapProxy?.map?.freeCameraOptions
         // convert to from hundreds of feet to meters
         freeCam?.altitude = alt
